@@ -1,0 +1,269 @@
+.gallery .img {
+	height: 120px;
+	/*width: 120px;   Adjust as you see fit */
+	float: left;
+	margin: 10px;
+	text-align: center;
+}
+
+.gallery .img a {
+	display: inline-block;
+	border: 2px solid #ddd;
+	padding: 1px;
+}
+
+.gallery .img a:hover {
+	border-color: #999;
+}
+
+.gallery img {
+	border: none;
+}
+
+.gallery .pagenavigation {
+	height: 50px;
+}
+
+.gallery .prevpage a, .gallery .prevpage em {
+	display: block;
+	width: 50px;
+	height: 39px;
+	float: left;
+	margin: 0;
+	text-indent: -1000px;
+	background: url(../../images/previous.png) transparent no-repeat 0 0;
+}
+
+.gallery .nextpage a, .gallery .nextpage em {
+	display: block;
+	width: 50px;
+	height: 39px;
+	float: left;
+	margin: 0 6px 0 0;
+	text-indent: -1000px;
+	background: url(../../images/next.png) transparent no-repeat 0 0;
+}
+
+.gallery .parentlink a {
+	display: block;
+	width: 50px;
+	height: 39px;
+	float: left;
+	text-indent: -1000px;
+	background: url(../../images/uppage.png) transparent no-repeat 0 0;
+}
+
+.gallery .pagenavigation a:hover {
+	background-position: 0 -40px;
+}
+
+.gallery .prevpage em, .gallery .nextpage em {
+	background-position: 0 -80px;
+}
+
+.gallery .pagelinks {
+	float: right;
+	border-right: 2px solid #666;
+}
+
+.gallery .pagelinks a, .gallery .pagelinks em {
+	margin-top: 6px;
+	padding: 0 6px;
+	border-left: 2px solid #666;
+	text-align: center;
+	font: bold 11px verdana; color: #666;
+}
+
+.gallery .pagelinks em {
+	color: #000;
+}
+
+.galleryclear {
+	clear: both;
+}
+
+/* AE-GALLERY */
+
+.ae-gallery {
+  width: 533px;  /* set the width of the thumbrow */
+  margin-bottom: 30px;
+}
+.ae-gallery, .ae-gallery * {
+  margin: 0;
+  padding: 0;
+}
+  .ae-gallery .ae-image-wrapper {
+    width: 100%; /* set the maximum width and height of the big image. Bigger images will be scaled down automatically by the script */
+    height: 400px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ddd;
+  }
+    .ae-gallery .ae-image-wrapper .ae-loader {
+      position: absolute;
+      z-index: 10;
+      top: 48%;
+      left: 48%;
+      border: 1px solid #CCC;
+    }
+    .ae-gallery .ae-image-wrapper .ae-next {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 25%;
+      height: 100%;
+      cursor: pointer;
+      display: block;
+      z-index: 200;
+    }
+    .ae-gallery .ae-image-wrapper .ae-prev {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 25%;
+      height: 100%;
+      cursor: pointer;
+      display: block;
+      z-index: 200;
+    }
+    .ae-gallery .ae-image-wrapper .ae-prev, .ae-gallery .ae-image-wrapper .ae-next {
+      /* Or else IE will hide it */
+      background: url(../ae-gallery/trans.gif);
+    }
+      .ae-gallery .ae-image-wrapper .ae-prev .ae-prev-image, .ae-gallery .ae-image-wrapper .ae-next .ae-next-image {
+        background: url(../ae-gallery/ae_prev.png);
+        width: 30px;
+        height: 30px;
+        display: none;
+        position: absolute;
+        top: 47%;
+        left: 0;
+        z-index: 101;
+      }
+      .ae-gallery .ae-image-wrapper .ae-next .ae-next-image {
+        background: url(../ae-gallery/ae_next.png);
+        width: 30px;
+        height: 30px;
+        right: 0;
+        left: auto;
+      }
+    .ae-gallery .ae-image-wrapper .ae-image {
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      z-index: 9;
+    }
+      .ae-gallery .ae-image-wrapper .ae-image a img {
+        border: 0;
+      }
+      .ae-gallery .ae-image-wrapper .ae-image .ae-image-description {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        padding: 7px;
+        text-align: left;
+        width: 100%;
+        z-index: 2;
+        background: url(../ae-gallery/opa75.png);
+        color: #000;
+      }
+      * html .ae-gallery .ae-image-wrapper .ae-image .ae-image-description {
+        background: none;
+        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (enabled=true, sizingMethod=scale, src='modules/Gallery/templates/ae-gallery/opa75.png');
+      }
+        .ae-gallery .ae-image-wrapper .ae-image .ae-image-description .ae-description-title {
+          display: block;
+        }
+  .ae-gallery .ae-controls {
+    height: 20px;
+  }
+    .ae-gallery .ae-info {
+      float: left;
+    }
+    .ae-gallery .ae-slideshow-controls {
+      float: right;
+    }
+      .ae-gallery .ae-slideshow-controls .ae-slideshow-start, .ae-gallery .ae-slideshow-controls .ae-slideshow-stop {
+        padding-left: 5px;
+        cursor: pointer;
+         display: inline-block;
+        text-indent: -500px;
+        overflow:hidden;
+        width: 14px;
+        background: url(../ae-gallery/ae_scroll_forward.png) 0px -3px no-repeat;
+      }
+      .ae-gallery .ae-slideshow-controls .ae-slideshow-stop {
+        background: url(../ae-gallery/ae_stop.png) 0px -3px no-repeat;
+     }
+      .ae-gallery .ae-slideshow-controls .ae-slideshow-countdown {
+        padding-left: 5px;
+        font-size: 0.9em;
+      }
+    .ae-gallery .ae-slideshow-running .ae-slideshow-start {
+      cursor: default;
+      font-style: italic;
+    }
+  .ae-gallery .ae-nav {
+    width: 100%;
+    position: relative;
+  }
+    .ae-gallery .ae-forward, .ae-gallery .ae-back {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      z-index: 10;
+    }
+    /* IE 6 doesn't like height: 100% */
+    * html .ae-gallery .ae-forward, .ae-gallery .ae-back {
+      height: 100px;
+    }
+    .ae-gallery .ae-back {
+      cursor: pointer;
+      left: -20px;
+      width: 13px;
+      display: block;
+      background: url(../ae-gallery/ae_scroll_back.png) 0px 22px no-repeat;
+    }
+    .ae-gallery .ae-forward {
+      cursor: pointer;
+      display: block;
+      right: -20px;
+      width: 13px;
+      background: url(../ae-gallery/ae_scroll_forward.png) 0px 22px no-repeat;
+    }
+    .ae-gallery .ae-nav .ae-thumbs {
+      overflow: hidden;
+      width: 100%;
+/*padding: 3px 1px;
+border: 1px solid #ddd;
+background-color: #fff;*/
+    }
+      .ae-gallery .ae-thumbs .ae-thumb-list {
+        float: left;
+        width: 9000px;
+        list-style: none;
+      }
+        .ae-gallery .ae-thumbs li {
+          float: left;
+          padding:0 5px 0 0 !important;
+          margin:0 0 0 0 !important;
+          list-style: none;
+        }
+          .ae-gallery .ae-thumbs li a {
+            display: block;
+          }
+            .ae-gallery .ae-thumbs li a img {
+              border: 3px solid #CCC;
+              display: block;
+            }
+            .ae-gallery .ae-thumbs li a.ae-active img {
+              border: 3px solid #616161;
+            }
+/* Can't do display none, since Opera won't load the images then */
+.ae-preloads {
+  position: absolute;
+  left: -9000px;
+  top: -9000px;
+}

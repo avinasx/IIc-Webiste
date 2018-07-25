@@ -1,0 +1,5 @@
+/* widgets_admin.css */
+
+.sortable-widget-list tr {cursor:move;}
+.sortable-widget-list .ui-sortable-helper {border:1px solid #CCC;}
+#loader {padding-left:50px;}

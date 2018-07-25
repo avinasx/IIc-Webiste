@@ -1,0 +1,11 @@
+table.module_fb_table { font-size: 10px; width: 100%; margin: 0; }
+.module_fb_area_wide { width: 100% }
+.module_fb_legend { width: 100%; margin: 6px 0; border: 1px solid #ccdbdd; }
+.module_fb_area_short { width: 500px; height: 100px; }
+.module_fb_link { text-decoration: underline }
+.module_fb_fieldset { margin-bottom: 2em }
+.module_fbr_table tr.row1:hover,
+.module_fbr_table tr.row2:hover { background: #ccdbdd }
+.odd { background-color: #fff; text-align:left; vertical-alignment: top; }
+.even { background-color: #ddd; text-align:left; vertical-alignment: top; }
+.inputhelp  { color: #384654; padding: 0; margin: 0; width: auto; text-align: left; }
